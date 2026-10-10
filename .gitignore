@@ -1,0 +1,69 @@
+# Unity-generated data and local editor settings
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/UIElementsSchema/
+**/.vs/
+**/.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.unitypackage
+*.apk
+*.aab
+*.keystore
+*.jks
+.DS_Store
+Thumbs.db
+
+# The public release contains original gameplay code and project configuration.
+# Keep imported asset packs and unverified media out of Git by default.
+# See THIRD_PARTY.md before adding another asset to this allowlist.
+/3Djianmo/
+/Assets/*
+!/Assets/*.cs
+!/Assets/*.cs.meta
+!/Assets/*.anim
+!/Assets/*.anim.meta
+!/Assets/*.controller
+!/Assets/*.controller.meta
+!/Assets/GameStart.unity
+!/Assets/GameStart.unity.meta
+!/Assets/EnterRoomTrigger.prefab
+!/Assets/EnterRoomTrigger.prefab.meta
+!/Assets/TargetPoint.prefab
+!/Assets/TargetPoint.prefab.meta
+!/Assets/DefaultVolumeProfile.asset
+!/Assets/DefaultVolumeProfile.asset.meta
+!/Assets/UniversalRenderPipelineGlobalSettings.asset
+!/Assets/UniversalRenderPipelineGlobalSettings.asset.meta
+
+!/Assets/公用/
+!/Assets/公用.meta
+!/Assets/New Folder/
+!/Assets/New Folder.meta
+!/Assets/Scenes/
+!/Assets/Scenes.meta
+/Assets/Scenes/*
+!/Assets/Scenes/SampleScene.unity
+!/Assets/Scenes/SampleScene.unity.meta
+
+!/Assets/Settings/
+!/Assets/Settings.meta
+/Assets/Settings/*
+!/Assets/Settings/*PipelineAsset*.asset
+!/Assets/Settings/*PipelineAsset*.asset.meta
+
+!/Assets/XR/
+!/Assets/XR.meta
