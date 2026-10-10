@@ -24,7 +24,7 @@ public class Switch : MonoBehaviour
     private Vector3 buttonOriginalPosition;
     private XRSimpleInteractable interactable;
     
-    private void Start()
+    private void Awake()
     {
         // 确保设置了按钮变换组件
         if (buttonTransform == null)
@@ -39,6 +39,12 @@ public class Switch : MonoBehaviour
         }
         
         buttonOriginalPosition = buttonTransform.localPosition;
+
+    }
+
+    private void Start()
+    {
+        if (buttonTransform == null) return;
         
         // 添加或获取XR交互组件
         interactable = buttonTransform.gameObject.GetComponent<XRSimpleInteractable>();

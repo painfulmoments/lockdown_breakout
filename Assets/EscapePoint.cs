@@ -10,11 +10,7 @@ public class EscapePoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            NewPlayerController newplayerController = other.GetComponent<NewPlayerController>();
-            if (newplayerController != null)
-            {
-                newplayerController.StartCoroutine(ShowMessage("Congratulations! You survived!", 2f));
-            }
+            StartCoroutine(ShowMessage("Congratulations! You survived!", 2f));
         }
     }
 

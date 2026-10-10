@@ -9,6 +9,5 @@ EditorBuildSettings:
     path: Assets/QA_HoldingCells/Demo/Demo_2.unity
     guid: 47886402fe9eb8f4d8530a265b550eec
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4e30969450bf0fd47bcf7c4dc5b101e0, type: 2}
-    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9423a8938fe5d634581ec1ced957ee64, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 30d200516256ff64ca452da60635d9d7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ab9a7b374513dc446a7a52e642d5de87, type: 2}

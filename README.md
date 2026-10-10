@@ -8,7 +8,7 @@ Lockdown: Breakout places you inside a biological research facility controlled b
 
 The project was created by **Team XJTLU Joy Over There (西浦彼间乐)** with support from the Virtual Engineering Centre at Xi'an Jiaotong-Liverpool University. Its design combines controller-driven virtual hands, interactive escape puzzles, and custom NavMesh enemy behavior to create a tense, embodied VR experience.
 
-This repository shares the original gameplay code and selected project configuration under the MIT License. Third-party art, audio, fonts, asset packs, and the full demo level are excluded and must be obtained separately. See [Third-party assets and release scope](THIRD_PARTY.md). This source release requires asset integration before the complete game can be played.
+This repository includes the original gameplay code, the main escape scene, and its selected models, textures, audio, animation, lighting, and VR interaction dependencies. Asset packs are trimmed to the content needed by the shipped scenes. The team's original code uses the MIT License; included third-party content retains its own terms and notices, with redistribution permissions confirmed by the project owner. See [Third-party assets and release scope](THIRD_PARTY.md).
 
 ## Award
 
@@ -35,7 +35,7 @@ Awarded to **Lockdown: Breakout (禁闭：突围)** and **Team XJTLU Joy Over Th
 - **Survival systems:** safe zones, death and restart handling, and an escape condition.
 - **Environmental storytelling:** contrasting residential and laboratory spaces establish the setting of the original game.
 
-The released scripts include door and key interactions, switch puzzle management, enemy AI, safe zones, player handling, and game state logic. The original game's visual environments depend on external assets that are not included here.
+The released project includes door and key interactions, switch puzzle management, enemy AI, safe zones, player handling, and game state logic, together with the saved escape level and its required assets.
 
 ## Technology
 
@@ -46,27 +46,31 @@ The released scripts include door and key interactions, switch puzzle management
 | XR Interaction Toolkit | 2.6.4 |
 | XR Hands | 1.4.3 |
 | AI Navigation | 1.1.7 |
-| Universal Render Pipeline | 16.0.6 |
+| Universal Render Pipeline | 14.0.12 |
 
-**VR / OpenXR:** the saved XR configuration uses the OpenXR loader for the Standalone target. Use an OpenXR-capable headset and an active OpenXR runtime for PC VR testing. Meta Quest 3 was the target headset described in the original project materials; this checkout does not provide a validated standalone Android/Quest build.
+**VR / OpenXR:** the saved XR configuration uses the OpenXR loader for the Standalone target, with automatic XR initialization enabled. Use an OpenXR-capable headset and an active OpenXR runtime for PC VR testing. Meta Quest 3 was the target headset described in the original project materials; a standalone Android/Quest build has not been validated for this release.
 
 ## Getting started
 
-1. Clone the repository or download its source archive:
+1. Install [Git LFS](https://git-lfs.com/) alongside Git, then clone the repository and retrieve its large binary assets:
 
    ```bash
+   git lfs install
    git clone https://github.com/painfulmoments/lockdown_breakout.git
+   cd lockdown_breakout
+   git lfs pull
    ```
 
-2. Add the cloned folder to Unity Hub and open it with **Unity 2022.3.62f2**. Allow Unity to restore the packages listed in `Packages/manifest.json`.
-3. In **Window > Package Manager > XR Interaction Toolkit 2.6.4 > Samples**, import **Starter Assets**. The gameplay scripts reference that sample's namespace, so it is required for compilation. Review [THIRD_PARTY.md](THIRD_PARTY.md), obtain other assets you need from their original publishers, and import them under their own licenses. Import TextMesh Pro resources through its package tools when needed.
-4. Create a new scene and integrate the gameplay scripts and selected prefabs. Some saved prefabs reference omitted models, scripts, or Unity package samples and need their references restored or replaced. `Assets/Scenes/SampleScene.unity` contains only legacy scene settings with omitted lighting and skybox references. `Assets/GameStart.unity` preserves a menu layout whose script, image, and font dependencies also need restoration. Neither is a playable escape level.
-5. In **Project Settings > XR Plug-in Management**, review the Standalone OpenXR provider and enable **Initialize XR on Startup** as needed. The saved project's automatic XR initialization flags are disabled.
-6. Select your headset's active OpenXR runtime, resolve the required asset and package references, and add your integrated scene to Build Settings before entering Play Mode or making a build.
+   Git LFS is required for the full models, textures, audio, and other large assets. Use the Git LFS checkout above to obtain the playable project; a source archive containing LFS pointer files is not sufficient. The selected source content occupies approximately **8.3 GiB** before Unity generates its `Library` folder. Allow additional disk space for package downloads, imports, and builds.
 
-The original Build Settings reference `Assets/QA_HoldingCells/Demo/Demo_2.unity`. That level is inside an excluded third-party asset pack and is not distributed in this repository.
+2. Add the cloned folder to Unity Hub and open it with **Unity 2022.3.62f2**. Allow Unity to restore the packages listed in `Packages/manifest.json` and finish importing the assets. URP is set to **14.0.12** for this Unity version.
+3. Open **`Assets/QA_HoldingCells/Demo/Demo_2.unity`**, the main escape level already selected in Build Settings. The required XR Interaction Toolkit Starter Assets and TextMesh Pro resources are included in the repository.
+4. Connect your VR headset and select its active OpenXR runtime. In **Project Settings > XR Plug-in Management**, review the Standalone OpenXR configuration for your headset. **Initialize XR on Startup** is already enabled in the saved project.
+5. With the main scene open and imports complete, enter **Play Mode** for PC VR. To create a desktop build, use the Standalone target and the main scene listed in Build Settings.
 
-**Import and build status:** the original version records are preserved. The manifest lists URP 16.0.6 alongside Unity 2022.3.62f2, so package compatibility needs to be checked during import. This publication has not been validated with a Unity build or a headset playtest.
+The supported starting scene for this release is `Demo_2.unity`. The editor opens this scene automatically when a fresh project has no saved scene. The exact selected asset paths are listed in [ASSET_MANIFEST.txt](docs/ASSET_MANIFEST.txt).
+
+**Validation status:** a clean copy successfully restored packages, imported assets, compiled scripts, and opened the main level in Unity 2022.3.62f2. The final automated check ran approximately 20 seconds in Play Mode with zero errors and no missing scene scripts. It also checked eight switch positions, a cabinet door remaining open, and the escape message. Standalone OpenXR settings and initialization on startup were verified. Some imported collider warnings remain. A connected-headset playtest and a desktop or Quest build have not been performed; see [Validation details](docs/VALIDATION.md).
 
 ## Team
 
@@ -83,4 +87,4 @@ The original Build Settings reference `Assets/QA_HoldingCells/Demo/Demo_2.unity`
 
 The team's original code and authored gameplay configuration included in this repository are available under the [MIT License](LICENSE).
 
-Unity packages and Unity sample-derived portions of the saved XR scaffolding retain their respective licenses, including the [XR Interaction Toolkit license notice](docs/licenses/Unity-XR-Interaction-Toolkit-LICENSE.md). Separately imported third-party assets retain their original licenses. Award photos are included as documentation of the achievement and are excluded from the software license. See [THIRD_PARTY.md](THIRD_PARTY.md) for the release boundaries.
+Included third-party assets are published based on redistribution permissions confirmed by the project owner and retain their original terms and notices. The MIT License does not relicense them. Unity packages and Unity sample-derived portions retain their respective licenses; notices are preserved in [docs/licenses](docs/licenses), including the [Unity Companion License](docs/licenses/Unity-Companion-License.md). Liberation Sans retains the SIL Open Font License. Award photos document the achievement and are excluded from the software license. See [THIRD_PARTY.md](THIRD_PARTY.md) for the release boundaries.

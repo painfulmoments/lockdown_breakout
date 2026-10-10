@@ -1,0 +1,73 @@
+# Large map binaries are stored with Git LFS.
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.FBX filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+*.cubemap filter=lfs diff=lfs merge=lfs -text
+docs/awards/*.jpg -filter -diff -merge -text
+"Assets/Horror_House/Other/New Terrain.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (10).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (11).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (12).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (13).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (14).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (15).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (16).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (17).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (18).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (19).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (2).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (20).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (21).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (22).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (23).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (24).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (25).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (26).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (27).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (28).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (29).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (3).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (30).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (31).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (32).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (33).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (34).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (35).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (36).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (37).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (38).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (39).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (4).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (40).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (41).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (42).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (43).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (44).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (45).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (46).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (47).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (5).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (6).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (7).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (8).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_3m (9).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m (1).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m (2).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m (3).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m (4).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m (5).asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m.asset" filter=lfs diff=lfs merge=lfs -text
+"Assets/Scenes/SampleScene/LightingData.asset" filter=lfs diff=lfs merge=lfs -text

@@ -72,7 +72,8 @@ public class DoorController : MonoBehaviour
     {
         isOpen = true;
         // 直接设置门的旋转，不使用动画
-        doorTransform.rotation = Quaternion.Euler(openRotation);
+        targetRotation = Quaternion.Euler(openRotation);
+        doorTransform.rotation = targetRotation;
         
         // 取消所有开关的事件订阅
         foreach (var sw in switches)
