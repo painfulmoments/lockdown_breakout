@@ -1,3 +1,5 @@
+> Historical clean-source check. For the current Windows executable, see [Windows build and validation](BUILD_AND_VALIDATION.md).
+
 # Validation of the playable source release
 
 Validated on 2026-10-11 (Asia/Shanghai) with Unity 2022.3.62f2 in an isolated project folder copied from the selected public files, without the original Library or package cache. Unity restored the packages from the committed manifest and lock file.
@@ -34,3 +36,4 @@ The preparation corrected three gameplay script filenames to match their classes
 The final check recorded eight imported collider warnings: four vehicle WheelColliders without Rigidbody components, two complex meshes using partial convex hulls, and two negatively scaled cell-glass BoxColliders. They did not cause errors during the automated run.
 
 A connected-headset test of tracking, controller input, locomotion, and the complete escape sequence has not been performed. Desktop executable and standalone Android/Quest builds have not been validated. These checks establish that the selected source project imports, compiles, opens, and runs the tested desktop scene interactions.
+

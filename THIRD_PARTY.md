@@ -2,7 +2,7 @@
 
 This repository contains the team's gameplay source, the main escape scene, Unity project settings, package manifests, XR configuration, and the assets selected for those scenes. Third-party source assets are included based on redistribution permissions confirmed by the project owner. Copyright remains with the respective authors, and included third-party content retains its original terms and notices. The root MIT License applies to the team's original software and authored gameplay data; it does not relicense imported assets.
 
-The main escape level is `Assets/QA_HoldingCells/Demo/Demo_2.unity`, which is selected in Build Settings. The release includes its referenced models, prefabs, materials, textures, animations, audio, lighting data, navigation data, and VR interaction dependencies. The required XR Interaction Toolkit Starter Assets and TextMesh Pro resources are included. A clean Unity import, compilation, scene load, and automated desktop Play Mode check passed for this asset-inclusive release. Headset playtesting and builds have not been performed; see [README.md](README.md) for setup and [VALIDATION.md](docs/VALIDATION.md) for the checks and limits.
+The main escape level is `Assets/QA_HoldingCells/Demo/Demo_2.unity`, which is selected in Build Settings. The release includes its referenced models, prefabs, materials, textures, animations, audio, lighting data, navigation data, and VR interaction dependencies. The required XR Interaction Toolkit Starter Assets and TextMesh Pro resources are included. A clean Unity import, compilation, scene load, and automated desktop Play Mode check passed for this asset-inclusive release. A Windows PC VR build is now available; see [build and validation](docs/BUILD_AND_VALIDATION.md) for its checks and limits. Physical-headset playtesting remains unverified. The earlier [source validation](docs/VALIDATION.md) is a separate record.
 
 ## Selected imported content
 
@@ -46,8 +46,9 @@ Unity-derived portions under `Assets/New Folder`, `Assets/公用`, and `Assets/L
 
 ## Large assets and Git LFS
 
-Large binary source assets use Git LFS. Install Git LFS before cloning and run `git lfs pull` in the repository to retrieve the complete files. The selected source assets occupy approximately 8.3 GiB before Unity creates import caches. The [README](README.md#getting-started) provides checkout and editor setup instructions.
+Large binary source assets use Git LFS. Install Git LFS before cloning and run `git lfs pull` in the repository to retrieve the complete files. The selected source assets occupy approximately 8.3 GiB before Unity creates import caches. The [README](README.md#open-the-unity-project) provides checkout and editor setup instructions.
 
 ## Award photos
 
 `docs/awards/certificate.jpg` and `docs/awards/trophies.jpg` are the owner-provided photos supplied for this project's award documentation. They document **Best Entertainment Award, Professional Category, 2025 Star Shark Cup Global VR Content Competition** and are not offered under the MIT software license. The separate project's trophy visible on the right of the second photo is not an award claim for Lockdown: Breakout.
+
