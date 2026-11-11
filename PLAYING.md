@@ -1,4 +1,4 @@
-# Playing Lockdown: Break Out
+# Playing Lockdown：Breakout
 
 Lockdown is a **Windows PC VR horror prototype**. You need a VR headset, tracked controllers and a PC capable of running both VR software and the game. The Windows executable does not install directly on a Quest headset.
 

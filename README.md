@@ -1,8 +1,8 @@
-# Lockdown: Break Out
+# Lockdown：Breakout
 
 **A VR horror escape game developed from an experimental research prototype.**
 
-<img src="docs/images/teaser.png" width="100%" alt="Lockdown: Break Out — a first-person VR view inside the containment facility">
+<img src="docs/images/teaser.png" width="100%" alt="Lockdown：Breakout — a first-person VR view inside the containment facility">
 
 **Unity · Windows PC VR / OpenXR · 3-person game team · 2025**
 
@@ -48,12 +48,12 @@ For Lockdown, the game team brought the previously separated elements into a con
 **Best Entertainment Award · Professional Category**  
 2025 Star Shark Cup Global Virtual Reality Content Competition
 
-Awarded to **Lockdown: Break Out (禁闭：突围)** and **Team XJTLU Joy Over There**. The certificate is dated **26 December 2025**.
+Awarded to **Lockdown：Breakout (禁闭：突围)** and **Team XJTLU Joy Over There**. The certificate is dated **26 December 2025**.
 
 <table>
   <tr>
-    <td align="center"><img src="docs/awards/certificate.png" width="360" alt="Lockdown: Break Out Best Entertainment Award certificate from the 2025 Star Shark Cup, Professional Category"></td>
-    <td align="center"><img src="docs/awards/trophies.jpg" width="420" alt="Award trophies, with the Lockdown: Break Out trophy on the left"></td>
+    <td align="center"><img src="docs/awards/certificate.png" width="360" alt="Lockdown：Breakout Best Entertainment Award certificate from the 2025 Star Shark Cup, Professional Category"></td>
+    <td align="center"><img src="docs/awards/trophies.jpg" width="420" alt="Award trophies, with the Lockdown：Breakout trophy on the left"></td>
   </tr>
   <tr>
     <td align="center">Best Entertainment Award certificate</td>

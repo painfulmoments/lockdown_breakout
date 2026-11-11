@@ -50,5 +50,5 @@ Large binary source assets use Git LFS. Install Git LFS before cloning and run `
 
 ## Award photos
 
-`docs/awards/certificate.jpg` and `docs/awards/trophies.jpg` are the owner-provided photos supplied for this project's award documentation. They document **Best Entertainment Award, Professional Category, 2025 Star Shark Cup Global VR Content Competition** and are not offered under the MIT software license. The separate project's trophy visible on the right of the second photo is not an award claim for Lockdown: Breakout.
+`docs/awards/certificate.jpg` and `docs/awards/trophies.jpg` are the owner-provided photos supplied for this project's award documentation. They document **Best Entertainment Award, Professional Category, 2025 Star Shark Cup Global VR Content Competition** and are not offered under the MIT software license. The separate project's trophy visible on the right of the second photo is not an award claim for Lockdown：Breakout.
 
