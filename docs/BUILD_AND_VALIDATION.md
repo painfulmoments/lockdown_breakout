@@ -38,3 +38,5 @@ The updated helper also checks an existing completed ZIP before accepting it; an
 The release includes `SHA256SUMS.txt` for the numbered parts and combined archive. The complete ZIP is checked for CRC errors before publication. Keep the executable, its `_Data` directory, native libraries and runtime folders together.
 
 This is a **PC VR preview**, not an Android APK or a validated standalone Quest build. Meta Quest 3 is the project's target headset; the play guide explains the Quest Link / active OpenXR setup.
+
+The numbered game archives retain their original packaged English guide as a release snapshot. This documentation/helper correction does not repackage them; use the repository's [English](../PLAYING.md) or [Chinese](../PLAYING.zh-CN.md) guide for the maintained instructions.
