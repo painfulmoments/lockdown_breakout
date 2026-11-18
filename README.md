@@ -2,11 +2,13 @@
 
 **A VR horror escape game developed from an experimental research prototype.**
 
-<img src="docs/images/teaser.png" width="100%" alt="Lockdown：Breakout — a first-person VR view inside the containment facility">
-
 **Unity · Windows PC VR / OpenXR · 3-person game team · 2025**
 
-[Downloads](https://github.com/painfulmoments/lockdown_breakout/releases) · [Play guide](PLAYING.md) · [Project case study](https://14mountain.com/engineering-lockdown) · [Research paper](https://doi.org/10.1016/j.cag.2025.104470)
+[Download demo](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [Play guide](PLAYING.md) · [中文主页](README.zh-CN.md) · [中文试玩说明](PLAYING.zh-CN.md) · [Project case study](https://14mountain.com/engineering-lockdown) · [Research paper](https://doi.org/10.1016/j.cag.2025.104470)
+
+<img src="docs/images/teaser.png" width="100%" alt="Lockdown：Breakout — a first-person VR view inside the containment facility">
+
+**Release status:** Windows PC VR preview. Build and desktop startup checks passed; a complete packaged headset playthrough is **not yet verified**. [Validation record](docs/BUILD_AND_VALIDATION.md).
 
 You are trapped in a biological research facility after a containment failure. Find a route through its two floors, solve environmental puzzles and avoid the creatures moving through the building. Controller-driven hands let you handle objects and operate the environment; a laser weapon can slow enemies when you need a way past them.
 
@@ -14,13 +16,44 @@ You are trapped in a biological research facility after a containment failure. F
 
 ## Play the demo
 
-**A VR headset and tracked controllers are required.** The desktop build runs on a Windows PC and sends the VR view to a connected headset. It is not an Android APK or a headset-only Quest installation.
+| Item | Current demo |
+| --- | --- |
+| Platform | Windows x64 PC VR / OpenXR; not a standalone Quest APK |
+| Headset and controllers | Quest 3 was the project target; two tracked controllers required |
+| Connection | Enter Quest Link before launch; this package has not completed a physical-headset test |
+| Free disk space | Allow about **20 GB** while keeping downloads, combined ZIP and extracted game |
+| Player setup | No Unity Editor, Git or Git LFS required |
+| Release | **v0.1.0-pcvr**, prototype preview |
 
-Download the [Windows x64 PC VR demo — v0.1.0](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr). Download **all numbered ZIP parts** and **`Join_Demo.cmd`** into the same folder. Double-click the helper to combine the archive, then use Windows **Extract All**. No extra extraction software is needed.
+Download these files from the [same release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr):
 
-The release is a public prototype preview. The Windows player was built with Unity 2022.3.62f2; the [build and validation record](docs/BUILD_AND_VALIDATION.md) distinguishes build checks from physical-headset testing.
+| File | Size / purpose |
+| --- | --- |
+| [ZIP part .001](https://github.com/painfulmoments/lockdown_breakout/releases/download/v0.1.0-pcvr/LockdownBreakOut-Windows-x64-v0.1.0.zip.001) | **1.50 GiB**, required |
+| [ZIP part .002](https://github.com/painfulmoments/lockdown_breakout/releases/download/v0.1.0-pcvr/LockdownBreakOut-Windows-x64-v0.1.0.zip.002) | **0.97 GiB**, required |
+| [Join_Demo.cmd](https://github.com/painfulmoments/lockdown_breakout/releases/download/v0.1.0-pcvr/Join_Demo.cmd) | Checks and combines the parts using Windows' built-in tools |
+| [SHA256SUMS.txt](https://github.com/painfulmoments/lockdown_breakout/releases/download/v0.1.0-pcvr/SHA256SUMS.txt) | Optional manual integrity verification |
 
-For Quest, the launch sequence is: **connect to the PC → enter Quest Link → run the extracted game `.exe`**. Read the [complete play guide](PLAYING.md) for the OpenXR setup, controls and troubleshooting. Players do not need Unity or Git LFS to run a packaged demo.
+1. Put **both numbered parts and `Join_Demo.cmd` in one folder**. These are pieces of one ZIP: do not extract them separately.
+2. Double-click **`Join_Demo.cmd`**. It verifies both parts and the completed archive. Right-click the resulting `LockdownBreakOut-Windows-x64-v0.1.0.zip` and choose **Extract All**.
+3. Connect the headset, make Meta Link the active OpenXR runtime, and **enter Quest Link inside the headset**.
+4. Open the extracted `LockdownBreakOut-Windows-x64` folder and run **`LockdownBreakOut.exe`**. Keep its `_Data` folder and runtime libraries together.
+
+**Do not download GitHub's automatic “Source code” archive to play.** No extra extraction software is needed. The current release is a Windows PC VR application, not an Android installation.
+
+See the [complete play guide](PLAYING.md) or [中文试玩说明](PLAYING.zh-CN.md) for Link setup, controls and troubleshooting.
+
+## Controls
+
+| Input | Action |
+| --- | --- |
+| Left thumbstick | Move |
+| Right thumbstick | Continuous turn |
+| Grip / Select | Grab supported objects and operate puzzle switches |
+| Trigger / Activate | Fire the held slowing weapon; operate key-controlled doors in range |
+| Window close / **Alt+F4** | Exit |
+
+Bindings are checked against the supplied input actions and scripts; physical-controller behavior in this package remains unverified. [Detailed controls](PLAYING.md#controls).
 
 ## Gameplay
 
@@ -109,8 +142,16 @@ The existing clean-source check restored packages, imported the selected assets,
 
 Some imported collider warnings remain. See the release notes for packaged-build checks, [validation details](docs/VALIDATION.md) for the source checks, and the [asset manifest](docs/ASSET_MANIFEST.txt) for the selected content.
 
+## Help and feedback
+
+See [troubleshooting](PLAYING.md#troubleshooting). In [Issues](https://github.com/painfulmoments/lockdown_breakout/issues), include the release version, headset, connection, Windows version, GPU, active OpenXR runtime and reproduction steps. Review logs for private information before attaching them.
+
 ## License and included assets
 
 The team’s original code and authored gameplay configuration included in this repository use the [MIT License](LICENSE).
 
 Included third-party assets are published based on redistribution permissions confirmed by the project owner and retain their original terms and notices. The MIT License does not relicense them. Unity packages and Unity sample-derived portions retain their respective licenses; notices are preserved in [docs/licenses](docs/licenses), including the [Unity Companion License](docs/licenses/Unity-Companion-License.md). Liberation Sans retains the SIL Open Font License. Award photos document the achievement and are excluded from the software license. See [third-party assets and release scope](THIRD_PARTY.md).
+
+## Related project
+
+[REHUB Grounding Demo](https://github.com/painfulmoments/Grounding_demo) explores guided grounding with a conversational digital human in a forest environment.

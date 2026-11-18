@@ -31,7 +31,9 @@ The checked scene's XR rig uses **left-thumbstick movement** and **right-thumbst
 
 ## Download integrity and packaging
 
-The complete Unity player is compressed without removing its runtime dependencies. GitHub limits each release attachment to [less than 2 GiB](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases), so the ZIP is provided as numbered parts. `Join_Demo.cmd` combines those parts using Windows' built-in binary-copy command; Windows **Extract All** can then extract the complete ZIP.
+The complete Unity player is compressed without removing its runtime dependencies. GitHub limits each release attachment to [less than 2 GiB](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases), so the ZIP is provided as numbered parts. `Join_Demo.cmd` validates the numbered parts, joins them into a temporary file using Windows' built-in tools, verifies the complete ZIP's SHA-256 and only then promotes it to the final filename; Windows **Extract All** can then extract the complete ZIP.
+
+The updated helper also checks an existing completed ZIP before accepting it; an incomplete prior ZIP is rebuilt only from verified parts. The game binaries and numbered parts are unchanged by this helper correction.
 
 The release includes `SHA256SUMS.txt` for the numbered parts and combined archive. The complete ZIP is checked for CRC errors before publication. Keep the executable, its `_Data` directory, native libraries and runtime folders together.
 

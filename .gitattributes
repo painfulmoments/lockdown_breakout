@@ -71,3 +71,8 @@ docs/awards/*.jpg -filter -diff -merge -text
 "Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m (5).asset" filter=lfs diff=lfs merge=lfs -text
 "Assets/QA_HoldingCells/Demo/Demo_2/NavMesh-Floor_6m.asset" filter=lfs diff=lfs merge=lfs -text
 "Assets/Scenes/SampleScene/LightingData.asset" filter=lfs diff=lfs merge=lfs -text
+
+# Small README images are ordinary Git blobs, not LFS pointer files.
+docs/images/teaser.png -filter -diff -merge -text
+docs/awards/certificate.png -filter -diff -merge -text
+tools/*.cmd text eol=crlf

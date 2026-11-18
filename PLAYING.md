@@ -2,7 +2,7 @@
 
 Lockdown is a **Windows PC VR horror prototype**. You need a VR headset, tracked controllers and a PC capable of running both VR software and the game. The Windows executable does not install directly on a Quest headset.
 
-[Back to the project](https://github.com/painfulmoments/lockdown_breakout) · [Download the Windows demo](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr)
+[中文试玩说明](PLAYING.zh-CN.md) · [Back to the project](https://github.com/painfulmoments/lockdown_breakout) · [Download the Windows demo](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr)
 
 ## What you need
 
@@ -16,8 +16,8 @@ Unity Editor, Git and Git LFS are only needed for working with the source projec
 
 ## First launch with Quest Link
 
-1. Open the [Windows PC VR release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr). Download **all** files named `LockdownBreakOut-Windows-x64-v0.1.0.zip.001`, `.002`, and any later numbered parts, plus **`Join_Demo.cmd`**, into one folder. Do not choose GitHub’s automatically generated **Source code** archive.
-2. Double-click **`Join_Demo.cmd`**. It combines the numbered parts into `LockdownBreakOut-Windows-x64-v0.1.0.zip` using Windows' built-in file-copy command. Right-click the complete ZIP and select **Extract All**. Allow about **20 GB of free space** while retaining the parts, combined ZIP and extracted game. Do not run the `.exe` from inside the ZIP or move it away from its accompanying files.
+1. Open the [Windows PC VR release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr). Download **all** files named `LockdownBreakOut-Windows-x64-v0.1.0.zip.001`, `.002`, plus **`Join_Demo.cmd`**, into one folder. Do not choose GitHub’s automatically generated **Source code** archive.
+2. Double-click **`Join_Demo.cmd`**. It checks and combines the numbered parts into `LockdownBreakOut-Windows-x64-v0.1.0.zip` using Windows' built-in tools, after checking their SHA-256 hashes. Right-click the complete ZIP and select **Extract All**. Allow about **20 GB of free space** while retaining the parts, combined ZIP and extracted game. Do not run the `.exe` from inside the ZIP or move it away from its accompanying files.
 3. Open the Meta Link PC app. Add or select your headset and establish its connection to the PC.
 4. In the PC app, open **Settings → General → OpenXR Runtime** and make Meta Link the active OpenXR runtime. If the activation option is grayed out because Meta Link is already active, leave it as it is.
 5. Put on the headset, enable **Quest Link**, and enter the Link session. Confirm that the headset is connected and the controllers are tracked before starting the game.
@@ -55,6 +55,7 @@ Some scene messages may be in Chinese. On a key-controlled door, **“按下扳�
 
 | What happens | What to check |
 | --- | --- |
+| The join helper reports a checksum mismatch | Redownload the named numbered part from the same release. An incomplete existing combined ZIP is not accepted as success; valid parts can rebuild it. |
 | The game opens on the monitor but does not appear correctly in the headset | Close the game. Confirm that the headset is inside an active Link session, Meta Link is the active OpenXR runtime, and the controllers are tracked; then relaunch. The desktop window can be a mirror of the VR view. |
 | Controllers are missing or do not respond | Check controller tracking in the Link environment before launching the game. Reconnect the controllers and restart the game after the connection is working. |
 | Unity reports a missing `_Data` folder or `UnityPlayer.dll` | Extract the entire archive again. Keep all supplied files together rather than copying only the `.exe`. |
