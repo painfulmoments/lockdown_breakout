@@ -6,6 +6,8 @@ The main escape level is `Assets/QA_HoldingCells/Demo/Demo_2.unity`, which is se
 
 ## Selected imported content
 
+The sections below describe the current Lockdown Unity source and its selected content. The separate historical SURF binary package has its own scope at the end of this document.
+
 The release includes selected content from these imported asset directories, rather than complete copies of the original packs:
 
 | Source directory | Included content |
@@ -51,4 +53,10 @@ Large binary source assets use Git LFS. Install Git LFS before cloning and run `
 ## Award photos
 
 `docs/awards/certificate.jpg`, `docs/awards/certificate.png`, and `docs/awards/trophies.jpg` are the owner-provided photos supplied for this project's award documentation. They document **Best Entertainment Award, Professional Category, 2025 Star Shark Cup Global VR Content Competition** and are not offered under the MIT software license. The separate project's trophy visible on the right of the second photo is not an award claim for Lockdown：Breakout.
+
+## Legacy SURF 2024 binary package
+
+The [Legacy SURF 2024 Windows release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-legacy-pc-playable-2026-11-19) distributes the original historical archive under the attachment name `SURF-2024-Legacy-PC-Demo.zip`. The archive bytes and its `escape the villa` player folder are preserved unchanged; this is not a rebuild from the current Lockdown source project. The [legacy play guide](SURF_PC_DEMO.md) records the package identity, instructions and checks.
+
+The root MIT License does not automatically license the entire archived application or its third-party content. Rights in the archived code, engine runtime, art, audio, fonts and other resources remain with their respective owners under the applicable original terms; publishing the archive does not grant additional rights or assign it a new blanket license. No additional license is inferred from the presence or absence of notice files in this historical package. The Lockdown award documentation above does not make an award claim for the SURF build.
 

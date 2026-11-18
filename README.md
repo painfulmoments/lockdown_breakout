@@ -4,7 +4,7 @@
 
 **Unity · Windows PC VR / OpenXR · 3-person game team · 2025**
 
-[Download demo](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [Play guide](PLAYING.md) · [中文主页](README.zh-CN.md) · [中文试玩说明](PLAYING.zh-CN.md) · [Project case study](https://14mountain.com/engineering-lockdown) · [Research paper](https://doi.org/10.1016/j.cag.2025.104470)
+[Download PC VR demo](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [PC VR play guide](PLAYING.md) · [Legacy SURF demo](SURF_PC_DEMO.md) · [中文主页](README.zh-CN.md) · [中文试玩说明](PLAYING.zh-CN.md) · [Project case study](https://14mountain.com/engineering-lockdown) · [Research paper](https://doi.org/10.1016/j.cag.2025.104470)
 
 <img src="docs/images/teaser.png" width="100%" alt="Lockdown：Breakout — a first-person VR view inside the containment facility">
 
@@ -14,7 +14,19 @@ You are trapped in a biological research facility after a containment failure. F
 
 *Chinese title: 禁闭：突围. Created by Team XJTLU Joy Over There (西浦彼间乐), with support from the Virtual Engineering Centre at Xi’an Jiaotong-Liverpool University.*
 
+## Choose a demo
+
+| Version | Package | Download and instructions |
+| --- | --- | --- |
+| **Current Lockdown：Breakout** | Windows PC VR / OpenXR preview | [v0.1.0-pcvr release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [PC VR play guide](PLAYING.md) |
+| **Legacy SURF 2024** | Historical Windows keyboard-and-mouse build; **1.96 GiB**, single ZIP | [Legacy playable release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-legacy-pc-playable-2026-11-19) · [Legacy play guide](SURF_PC_DEMO.md) |
+| SURF 2024 recording | 1080p video; **recording only, not a playable build** | [Watch/download the recording](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-pc-demo-2026-11-18) |
+
+The legacy release preserves the original SURF desktop archive, with `escape the villa/escape the villa.exe` and its accompanying runtime files. It is a historical binary, **not a build from the current Unity source in this repository**. Its instructions and validation are recorded separately in the [legacy guide](SURF_PC_DEMO.md). The award below belongs to Lockdown：Breakout.
+
 ## Play the demo
+
+The steps and controls below apply to **the current Lockdown PC VR preview**. For the historical SURF desktop package, use the [legacy play guide](SURF_PC_DEMO.md).
 
 | Item | Current demo |
 | --- | --- |

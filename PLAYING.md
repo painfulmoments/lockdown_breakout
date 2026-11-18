@@ -4,6 +4,8 @@ Lockdown is a **Windows PC VR horror prototype**. You need a VR headset, tracked
 
 [中文试玩说明](PLAYING.zh-CN.md) · [Back to the project](https://github.com/painfulmoments/lockdown_breakout) · [Download the Windows demo](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr)
 
+**This guide applies to the current Lockdown PC VR preview, `v0.1.0-pcvr`.** The historical SURF Windows desktop package has its own [legacy play guide](SURF_PC_DEMO.md) and [playable release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-legacy-pc-playable-2026-11-19). Use that guide for the legacy executable and its controls. The separate [SURF demo recording](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-pc-demo-2026-11-18) is video only.
+
 ## What you need
 
 - A Windows PC supported by your headset’s PC VR software, with a VR-capable GPU.

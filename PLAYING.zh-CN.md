@@ -2,6 +2,8 @@
 
 [项目主页](README.zh-CN.md) · [试玩下载](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [English](PLAYING.md)
 
+**本指南仅适用于当前 Lockdown PC VR 预览版 `v0.1.0-pcvr`。** 历史 SURF Windows 桌面包有独立的[旧版中文试玩说明](SURF_PC_DEMO.zh-CN.md)和[可运行包发布页](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-legacy-pc-playable-2026-11-19)，其启动程序和操作方式请以旧版指南为准。另一个 [SURF 演示录屏发布页](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-pc-demo-2026-11-18)仅提供视频。
+
 Lockdown 是 **Windows PC VR 恐怖原型**。游戏运行在 Windows 电脑上，需要 VR 头显、两个跟踪手柄及可运行 PC VR 的电脑；Windows EXE 不会直接安装到 Quest 头显中。
 
 ## 1. 准备设备与空间

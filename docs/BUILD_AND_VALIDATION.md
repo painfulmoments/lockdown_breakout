@@ -2,6 +2,8 @@
 
 This record describes the **v0.1.0 Windows x64 PC VR preview** distributed through [GitHub Releases](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr). For installation and controller instructions, read the [play guide](../PLAYING.md).
 
+The separate [Legacy SURF 2024 desktop release](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-legacy-pc-playable-2026-11-19) preserves an existing Windows binary archive. It was not built from the current repository; the build and PC VR checks below do not apply to it. Its package checks, launch instructions and validation limits are recorded in the [legacy guide](../SURF_PC_DEMO.md).
+
 ## Build
 
 | Item | Result |

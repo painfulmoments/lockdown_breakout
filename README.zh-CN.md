@@ -4,7 +4,7 @@
 
 **Unity · Windows PC VR / OpenXR · 3 人游戏团队 · 2025**
 
-[试玩下载](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [中文试玩说明](PLAYING.zh-CN.md) · [English](README.md) · [项目案例](https://14mountain.com/engineering-lockdown) · [研究论文](https://doi.org/10.1016/j.cag.2025.104470)
+[PC VR 试玩下载](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [PC VR 中文试玩说明](PLAYING.zh-CN.md) · [旧版 SURF 试玩](SURF_PC_DEMO.zh-CN.md) · [English](README.md) · [项目案例](https://14mountain.com/engineering-lockdown) · [研究论文](https://doi.org/10.1016/j.cag.2025.104470)
 
 <img src="docs/images/teaser.png" width="100%" alt="禁闭：突围——收容设施中的第一人称 VR 场景">
 
@@ -28,7 +28,19 @@
 
 其他 OpenXR 头显、有线 Link 与无线 Link 在本包中的物理头显体验尚未完成验证。完整范围见[构建与验证记录](docs/BUILD_AND_VALIDATION.md)。
 
+## 选择试玩版本
+
+| 版本 | 运行包 | 下载与说明 |
+| --- | --- | --- |
+| **当前 Lockdown：Breakout** | Windows PC VR / OpenXR 预览版 | [v0.1.0-pcvr 发布页](https://github.com/painfulmoments/lockdown_breakout/releases/tag/v0.1.0-pcvr) · [PC VR 中文试玩说明](PLAYING.zh-CN.md) |
+| **旧版 SURF 2024** | 历史 Windows 键鼠桌面构建；**1.96 GiB**，单个 ZIP | [旧版可运行包发布页](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-legacy-pc-playable-2026-11-19) · [旧版中文试玩说明](SURF_PC_DEMO.zh-CN.md) |
+| SURF 2024 演示录屏 | 1080p 视频；**仅录屏，不是可运行游戏** | [观看／下载录屏](https://github.com/painfulmoments/lockdown_breakout/releases/tag/surf2024-pc-demo-2026-11-18) |
+
+旧版发布保留原始 SURF 桌面归档，其中包含 `escape the villa/escape the villa.exe` 及配套运行文件。这是历史二进制包，**不是从本仓库当前 Unity 源项目构建的版本**。其操作要求和验证范围单独记录在[旧版试玩说明](SURF_PC_DEMO.zh-CN.md)中。下方奖项属于 Lockdown：Breakout。
+
 ## 下载与启动
+
+以下步骤和操作表适用于**当前 Lockdown PC VR 预览版**。历史 SURF 桌面包请使用[旧版中文试玩说明](SURF_PC_DEMO.zh-CN.md)。
 
 **需要 VR 头显、两个跟踪手柄和可运行 PC VR 的 Windows 电脑。试玩无需安装 Unity Editor、Git 或 Git LFS。**
 
